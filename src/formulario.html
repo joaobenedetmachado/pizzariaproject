@@ -24,65 +24,77 @@
     </header>
     <section>
         <div class="contents">
-            <div class="left">
-                <div class="main-content">
-                    <h1>SOBRE NÓS</h1>
-                    <p>Na Bora Bill's Pizzaria, nossa paixão é servir pizzas excepcionais que combinam tradição e
-                        inovação. Fundada com o objetivo de oferecer uma experiência culinária única, nossa pizzaria
-                        utiliza apenas ingredientes frescos e de alta qualidade para criar sabores autênticos e
-                        irresistíveis. Com um ambiente acolhedor e um atendimento caloroso, buscamos tornar cada visita
-                        especial e memorável. Seja para uma refeição casual com amigos ou uma celebração em família,
-                        estamos comprometidos em proporcionar o melhor da gastronomia italiana, mantendo o verdadeiro
-                        espírito da pizza artesanal. Venha descobrir por que a Bora Bill's Pizzaria é a sua nova escolha
-                        favorita!</p>
+            <div id="forms">
+                <div id="tittle">
+                    <h1>Formulario</h1>
                 </div>
-            </div>
-            <div class="right">
-                <div class="main-content">
-                    <img width="80%" src="https://i.ytimg.com/vi/BcFIyyKr8w0/maxresdefault.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div id="line"></div>
-        <div class="contents">
-            <div class="main-content">
-                <h1>Missão e Valores</h1>
-                <p>Na Bora Bill's Pizzaria, nossa missão é transformar cada refeição em uma celebração do sabor e da
-                    qualidade. Comprometidos com a excelência, buscamos oferecer aos nossos clientes não apenas pizzas
-                    deliciosas, mas uma experiência culinária memorável.</p>
-                <ul>
-                    <li>Qualidade: Usamos apenas ingredientes frescos e de alta qualidade para garantir que cada pizza
-                        seja deliciosa e nutritiva.</li>
-                    <li>Tradição: Preservamos técnicas tradicionais de preparo, combinando-as com inovações para criar
-                        sabores únicos.</li>
-                    <li>Comunidade: Estamos comprometidos em apoiar nossa comunidade local e participar de eventos e
-                        iniciativas que fortalecem nosso vínculo com a região.</li>
-                    <li>Sustentabilidade: Valorizamos práticas sustentáveis, desde a escolha de fornecedores locais até
-                        a redução de desperdícios.</li>
-                </ul>
-            </div>
-        </div>
-        <div id="line"></div>
-        <div class="contents">
-            <div class="left">
-                <div class="main-content">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614.28977403134!2d-73.982253!3d40.7580!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzQwIFN0YXRlIFdheW5lIE5Z!5e0!3m2!1sen!2sus!4v1593714746925!5m2!1sen!2sus"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-            <div class="right">
-                <div class="main-content">
-                    <h1>Venhas nos Visitar!</h1>
-                    <p>Convidamos você a vivenciar o sabor inigualável da Bora Bill's Pizzaria e descobrir por que somos
-                        a
-                        escolha favorita dos amantes de pizza. Venha nos visitar em nosso aconchegante ambiente, onde
-                        cada refeição é preparada com carinho e dedicação.</p>
-                    <p>Endereço: Rua das Flores, 123, Centro, São Paulo, SP</p>
-                    <p>Horário de Funcionamento: Segunda a Quinta-feira: 11h - 22h
-                        Sexta e Sábado: 11h - 23h
-                        Domingo: 12h - 21h</p>
+                <div id="main-content">
+                    <div class="left">
+                        <h3>Informações</h3>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Nome">
+                    
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="+55 (XX) XXXX-XXXX">
+                    
+                        <label for="cpf">Seu CPF</label>
+                        <input type="number" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                    
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="email@exemplo.com">
+                        
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha">
+                        
+                        <label for="confirmar_senha">Confirmar Senha</label>
+                        <input type="password" id="confirmar_senha" placeholder="Confirme sua senha">
+                    </div>
+                    
+                    <div class="right">
+                        <h3>Endereço</h3>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Endereço">
+                    
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" placeholder="Apto, bloco, etc.">
+                    
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="XXXXX-XXX">
+                    
+                        <label for="estados">Escolha seu estado:</label>
+                        <select id="estados" name="estados">
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                            <!-- Adicione mais opções conforme necessário -->
+                        </select>
+                    
+                        <label for="cidades">Escolha sua cidade:</label>
+                        <select id="cidades" name="cidades">
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Belo Horizonte">Belo Horizonte</option>
+                            <option value="Curitiba">Curitiba</option>
+                            <option value="Porto Alegre">Porto Alegre</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Fortaleza">Fortaleza</option>
+                            <option value="Recife">Recife</option>
+                            <option value="Brasília">Brasília</option>
+                            <!-- Adicione mais opções conforme necessário -->
+                        </select>
+                    
+                        <label for="aceitar">Aceito os termos e condições</label>
+                        <input type="checkbox" id="aceitar" name="aceitar">
+                        
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

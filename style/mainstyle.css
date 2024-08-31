@@ -98,6 +98,7 @@ section {
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 100%;
 }
 
 .left {
@@ -200,13 +201,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav {
+        height: 90%;
+        width: 70%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16pt;
+        flex-direction: column;
+    }
     header {
         height: 120px;
-    }
-
-    nav {
-        width: 90%;
-        font-size: 14pt;
     }
 
     section {
@@ -260,6 +265,97 @@ footer {
         align-items: center;
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
+
+    #main-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .left {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    
+    .right {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #forms {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+#forms #tittle, #main-content{
+    width: 100%;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    width: 48%; /* Ocupa quase metade da largura do container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #main-content {
+        flex-direction: column; /* Alinha os elementos em coluna para telas menores */
+    }
+
+    .left, .right {
+        width: 100%; /* Ocupa toda a largura disponível em telas menores */
+    }
+}
+
+input {
+    border: 2px solid #ed1c23; 
+    border-radius: 4px;
+}
+
+select {
+    border: 2px solid #ed1c23; 
+    border-radius: 4px;
+    background-color: #fff;
 }
