@@ -29,78 +29,123 @@
                     <h1>Formulario</h1>
                 </div>
                 <div id="main-content">
-                    <div class="left">
-                        <h3>Informações</h3>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Nome">
-                    
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" placeholder="+55 (XX) XXXX-XXXX">
-                    
-                        <label for="cpf">Seu CPF</label>
-                        <input type="number" id="cpf" placeholder="XXX.XXX.XXX-XX">
-                    
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="email@exemplo.com">
-                        
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Digite sua senha">
-                        
-                        <label for="confirmar_senha">Confirmar Senha</label>
-                        <input type="password" id="confirmar_senha" placeholder="Confirme sua senha">
-                    </div>
-                    
-                    <div class="right">
-                        <h3>Endereço</h3>
-                        <label for="endereco">Endereço</label>
-                        <input type="text" id="endereco" placeholder="Endereço">
-                    
-                        <label for="complemento">Complemento</label>
-                        <input type="text" id="complemento" placeholder="Apto, bloco, etc.">
-                    
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" placeholder="XXXXX-XXX">
-                    
-                        <label for="estados">Escolha seu estado:</label>
-                        <select id="estados" name="estados">
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                            <option value="Minas Gerais">Minas Gerais</option>
-                            <option value="Paraná">Paraná</option>
-                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                            <option value="Bahia">Bahia</option>
-                            <option value="Ceará">Ceará</option>
-                            <option value="Pernambuco">Pernambuco</option>
-                            <option value="Distrito Federal">Distrito Federal</option>
-                            <!-- Adicione mais opções conforme necessário -->
-                        </select>
-                    
-                        <label for="cidades">Escolha sua cidade:</label>
-                        <select id="cidades" name="cidades">
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                            <option value="Belo Horizonte">Belo Horizonte</option>
-                            <option value="Curitiba">Curitiba</option>
-                            <option value="Porto Alegre">Porto Alegre</option>
-                            <option value="Salvador">Salvador</option>
-                            <option value="Fortaleza">Fortaleza</option>
-                            <option value="Recife">Recife</option>
-                            <option value="Brasília">Brasília</option>
-                            <!-- Adicione mais opções conforme necessário -->
-                        </select>
-                    
-                        <label for="aceitar">Aceito os termos e condições</label>
-                        <input type="checkbox" id="aceitar" name="aceitar">
-                        
-                        <button type="submit">Enviar</button>
-                    </div>
-                    
+                    <form>
+                        <div class="left">
+                            <h3>Informações</h3>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Nome">
+                            
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="+55 (XX) XXXX-XXXX">
+                            
+                            <label for="cpf">Seu CPF</label>
+                            <input type="number" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                            
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="email@exemplo.com">
+                            
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="Digite sua senha">
+                            
+                            <label for="confirmar_senha">Confirmar Senha</label>
+                            <input type="password" id="confirmar_senha" placeholder="Confirme sua senha">
+                        </div>
+            
+                        <div class="left">
+                            <h3>Informações</h3>
+                            <label for="datadeentrega">Data de entrega</label>
+                            <input type="date" id="datadeentrega" placeholder="Data">
+                            
+                            <label for="horarioentrega">Horario de Entrega</label>
+                            <input type="time" id="horarioentrega" placeholder="Horario">
+                            
+                            <label for="tipopizza">Sabores</label>
+                            <select id="tipopizza" name="tipospizza">
+                                <option value="Margarita">Margarita</option>
+                                <option value="Calabresa">Calabresa</option>
+                                <option value="Frango com Catupiry">Frango com Catupiry</option>
+                                <option value="Quatro Queijos">Quatro Queijos</option>
+                                <option value="Portuguesa">Portuguesa</option>
+                                <option value="Pepperoni">Pepperoni</option>
+                                <option value="Napolitana">Napolitana</option>
+                            </select>
+                            
+                            <label for="tamanho">Tamanho</label>
+                            <select id="tamanho" name="tamanho">
+                                <option value="pequena">Pequena</option>
+                                <option value="media">Media</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                            
+                            <label for="estilosabor">Tipo  de Sabor</label>
+                            <select id="estilosabor" name="saborestipo">
+                                <option value="doce">Pequena</option>
+                                <option value="salgada">Media</option>
+                            </select>
+                            
+                            <label for="estilosabor">Tipo de Borda</label>
+                            <select id="estilosabor" name="saborestipo">
+                                <option value="doce">Borda Pequena</option>
+                                <option value="salgada">Borda Media</option>
+                            </select>
+                        </div>
+            
+                        <div class="right">
+                            <h3>Endereço</h3>
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" placeholder="Endereço">
+                            
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" placeholder="Apto, bloco, etc.">
+                            
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" placeholder="XXXXX-XXX">
+                            
+                            <label for="estados">Escolha seu estado:</label>
+                            <select id="estados" name="estados">
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Minas Gerais">Minas Gerais</option>
+                                <option value="Paraná">Paraná</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option value="Bahia">Bahia</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Pernambuco">Pernambuco</option>
+                                <option value="Distrito Federal">Distrito Federal</option>
+                            </select>
+                            
+                            <label for="cidades">Escolha sua cidade:</label>
+                            <select id="cidades" name="cidades">
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Belo Horizonte">Belo Horizonte</option>
+                                <option value="Curitiba">Curitiba</option>
+                                <option value="Porto Alegre">Porto Alegre</option>
+                                <option value="Salvador">Salvador</option>
+                                <option value="Fortaleza">Fortaleza</option>
+                                <option value="Recife">Recife</option>
+                                <option value="Brasília">Brasília</option>
+                            </select>
+                            
+                            <label for="aceitar">Aceito os termos e condições</label>
+                            <input type="checkbox" id="aceitar" name="aceitar">
+                            
+                            <div>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
                 </div>
             </div>
         </div>
     </section>
     <footer>
-
+        <p>&copy; 2024 Benedet Interprise. Todos os direitos reservados.</p>
     </footer>
 </body>
 

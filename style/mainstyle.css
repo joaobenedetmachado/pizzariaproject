@@ -19,31 +19,31 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.3vw;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8vw;
 }
 
 h3 {
-    font-size: 1.75em;
+    font-size: 1.5vw;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.2vw;
 }
 
 h5 {
-    font-size: 1.25em;
+    font-size: 1.1vw;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 0.9vw;
 }
 
 p {
-    font-size: 1em;
+    font-size: .9vw;
 }
 
 header {
@@ -149,6 +149,7 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
+    color: #f8f9fa;
 }
 
 .cards {
@@ -202,16 +203,26 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        height: 90%;
+        height: auto;
         width: 70%;
         align-items: center;
         display: flex;
         justify-content: space-between;
         font-size: 16pt;
         flex-direction: column;
+        
+    }
+
+    nav img {
+        height: 120px;
     }
     header {
-        height: 120px;
+        height: auto;
+    }
+
+    #links {
+        gap: 30px;
+        display: flex;
     }
 
     section {
@@ -258,34 +269,27 @@ footer {
         justify-content: center;
     }
 
-    .pedirButton button {
-        width: 80%;
-    }
     .contents {
         align-items: center;
         justify-content: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
-    #main-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-    
+
     .left {
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: start;
+        flex-direction: center;
     }
     
     .right {
         width: 100%;
         display: flex;
         align-items: flex-start;
+        flex-direction: center;
     }
 
     #forms {
@@ -295,6 +299,53 @@ footer {
         flex-direction: column;
         width: 100%;
         height: auto;
+    }
+    
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.75em;
+    }
+    
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    h5 {
+        font-size: 1.25em;
+    }
+    
+    h6 {
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: .9em;
+    }
+
+    .contents {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .contents .left, .right {
+        width: 100%
+    }
+
+    #main-content{
+        flex-direction: row;
+        display: flex;       
+        flex-wrap: wrap; 
     }
 }
 
@@ -315,14 +366,11 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    height: auto;
 }
-
 .left, .right {
-    width: 48%; /* Ocupa quase metade da largura do container */
+    width: 48%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -339,16 +387,6 @@ footer {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    #main-content {
-        flex-direction: column; /* Alinha os elementos em coluna para telas menores */
-    }
-
-    .left, .right {
-        width: 100%; /* Ocupa toda a largura disponível em telas menores */
-    }
-}
-
 input {
     border: 2px solid #ed1c23; 
     border-radius: 4px;
@@ -358,4 +396,28 @@ select {
     border: 2px solid #ed1c23; 
     border-radius: 4px;
     background-color: #fff;
+}
+
+
+button {
+    background-color: #ed1c23;
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: #f8f9fa;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #8d1216;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pedirButton button {
+    width: 70%;
 }
